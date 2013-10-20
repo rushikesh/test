@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test PhoneGap App</title>
+	<script src="js/jquery-2.0.3.js"></script>
+</head>
+<body>
+	<input type="button" id="inpBtn" value="DateTime" /><input type="button" id="clear" value="clear" />
+	<div id="content"></div>
+</body>
+<script>
+	$("#inpBtn").on('click',function(){
+		$("#content").append(new Date()+"<br/>");
+	});
+	$("#clear").on('click',function(){
+		$("#content").html("");
+	});
+</script>
+</html>
